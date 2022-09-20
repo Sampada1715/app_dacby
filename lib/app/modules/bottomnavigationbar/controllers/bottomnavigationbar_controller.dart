@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-class ProfileController extends GetxController {
-  //TODO: Implement ProfileController
+class BottomnavigationbarController extends GetxController {
+  //TODO: Implement BottomnavigationbarController
 
   final count = 0.obs;
   @override

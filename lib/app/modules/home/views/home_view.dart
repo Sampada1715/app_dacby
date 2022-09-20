@@ -1,3 +1,4 @@
+import 'package:app_decby/app/modules/bottomnavigationbar/views/bottomnavigationbar_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/home_controller.dart';
@@ -67,7 +68,9 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => BottomnavigationbarView()));
+                  },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(150),

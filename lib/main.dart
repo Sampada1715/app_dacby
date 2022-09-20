@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'app/routes/app_pages.dart';
+import 'package:app_decby/app/modules/bottomnavigationbar/views/bottomnavigationbar_view.dart';
 
 void main()=>runApp(MyApp());
 class MyApp extends StatefulWidget {
@@ -19,6 +20,7 @@ class _MyAppState extends State<MyApp> {
       title: "Application",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
+      home: BottomnavigationbarView(),
     );
   }
 }

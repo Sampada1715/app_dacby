@@ -1,11 +1,11 @@
 import 'package:get/get.dart';
 
+import '../modules/bottomnavigationbar/bindings/bottomnavigationbar_binding.dart';
+import '../modules/bottomnavigationbar/views/bottomnavigationbar_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login1/bindings/login1_binding.dart';
 import '../modules/login1/views/login1_view.dart';
-import '../modules/profile/bindings/profile_binding.dart';
-import '../modules/profile/views/profile_view.dart';
 import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
 
@@ -22,11 +22,7 @@ class AppPages {
       page: () => HomeView(),
       binding: HomeBinding(),
     ),
-    GetPage(
-      name: _Paths.PROFILE,
-      page: () => const ProfileView(),
-      binding: ProfileBinding(),
-    ),
+
     GetPage(
       name: _Paths.LOGIN1,
       page: () => Login1View(),
@@ -34,8 +30,13 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.REGISTER,
-      page: () =>  RegisterView(),
+      page: () => RegisterView(),
       binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: _Paths.BOTTOMNAVIGATIONBAR,
+      page: () => const BottomnavigationbarView(),
+      binding: BottomnavigationbarBinding(),
     ),
   ];
 }
